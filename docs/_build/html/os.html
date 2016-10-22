@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setting up your Operating System &mdash; Djangology 0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="author" title="About these documents"
+              href="about.html"/>
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Djangology 0.1 documentation" href="index.html"/>
+        <link rel="next" title="Atom Text Editor" href="text_editor.html"/>
+        <link rel="prev" title="About" href="about.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Djangology
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up your Operating System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#take-me-to-the-terminal">Take Me to the Terminal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-x-code-command-line-tools">Install X-Code Command Line Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#package-managers">Package Managers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#homebrew">Homebrew</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pip">pip</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-bash-profile">Create a .bash_profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-bashrc-script">Create a .bashrc script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-pip-to-only-execute-in-a-virtual-environment">Set pip to only execute in a virtual environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="text_editor.html">Atom Text Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx.html">Sphinx</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Djangology</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Setting up your Operating System</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/os.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setting-up-your-operating-system">
+<h1>Setting up your Operating System<a class="headerlink" href="#setting-up-your-operating-system" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The instructions below cover setup for OSX El Capitan 10.11 and above.</p>
+</div>
+<div class="section" id="take-me-to-the-terminal">
+<h2>Take Me to the Terminal<a class="headerlink" href="#take-me-to-the-terminal" title="Permalink to this headline">¶</a></h2>
+<p>There are many amazing and expensive Interactive Development Environments (IDE&#8217;s)
+out there for Python. IDE&#8217;s are great for professionals because they auto-magically
+take care of a lot of things. Since this tutorial is about the basics, we&#8217;re going
+to be working in Terminal most of the time.</p>
+<p>So without further ado, launch Terminal:</p>
+<ol class="arabic simple">
+<li>Launch Spotlight Search by pressing <code class="kbd docutils literal"><span class="pre">cmd+space</span></code>.</li>
+<li>Type &#8216;Terminal&#8217; and press <code class="kbd docutils literal"><span class="pre">enter</span></code>.</li>
+</ol>
+<p>Woo hoo! Welcome to your <code class="docutils literal"><span class="pre">$HOME</span></code> directory. You should see something like this:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&lt;YOUR_COMPUTER&gt;:~ &lt;USER_ID&gt;$</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-x-code-command-line-tools">
+<h2>Install X-Code Command Line Tools<a class="headerlink" href="#install-x-code-command-line-tools" title="Permalink to this headline">¶</a></h2>
+<p>X-Code is the IDE that is used to develop applications for developing OSX and IOS
+applications. Do we care about that? Not for the scope of this tutorial. However,
+we do need the compiler tool-chain to help us install other development related
+software. Thankfully, we can install the stand alone X-Code Command Line tool:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> xcode-select --install
+</pre></div>
+</div>
+</div>
+<div class="section" id="package-managers">
+<h2>Package Managers<a class="headerlink" href="#package-managers" title="Permalink to this headline">¶</a></h2>
+<p>Most of the tools we will use in our development environment will not be found
+in the Apple Store or as an executable download. These tools are usually maintained
+at the binary level, so that developers can easily install the latest update or
+work collaborately to add features.</p>
+<div class="section" id="homebrew">
+<h3>Homebrew<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://brew.sh">Homebrew</a> will be used to install OSX binary packages for the most
+common elements in our development keychain (Python, PostgreSQL, Git, etc.).</p>
+<p>Install Homebrew from the most recent master version on GitHub using the following
+Ruby script:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<dl class="last docutils">
+<dt>Install the following packages via <code class="code console docutils literal"><span class="generic prompt"><span class="pre">$</span></span> <span class="pre">brew</span> <span class="pre">install</span> <span class="pre">&lt;package&gt;</span></code></dt>
+<dd><ul class="first last simple">
+<li>atom</li>
+<li>git</li>
+<li>postgresql</li>
+<li>python</li>
+<li>python3</li>
+<li>trash</li>
+</ul>
+</dd>
+<dt>Helpful Brew commands:</dt>
+<dd><ul class="first last simple">
+<li>help</li>
+<li>install</li>
+<li>list</li>
+<li>search</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="pip">
+<h3>pip<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h3>
+<p>pip is the python package installer. It comes in both the python and python3 brew packages. Later
+in this tutorial, we&#8217;ll edit the <code class="docutils literal"><span class="pre">.bashrc</span></code> script to control pip&#8217;s behavior in the global
+environment.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<dl class="last docutils">
+<dt>Install the following packages via <code class="code console docutils literal"><span class="generic prompt"><span class="pre">$</span></span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;package&gt;</span></code></dt>
+<dd><ul class="first last simple">
+<li>flake8</li>
+<li>flake8-docstrings</li>
+<li>pep8</li>
+<li>virtualenv</li>
+<li>virtualenvwrapper</li>
+</ul>
+</dd>
+<dt>Helpful pip commands:</dt>
+<dd><ul class="first last simple">
+<li>help</li>
+<li>install</li>
+<li>list</li>
+<li>search</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="section" id="create-a-bash-profile">
+<h2>Create a .bash_profile<a class="headerlink" href="#create-a-bash-profile" title="Permalink to this headline">¶</a></h2>
+<p>The bash_profile will allow us to override terminals default settings when we
+launch a new terminal window. We&#8217;ll use this to streamline some common tasks and
+(hopefully) help us avoid some mistakes.</p>
+<p>Use the console command <code class="docutils literal"><span class="pre">touch</span></code> to create a bash profile in your <code class="docutils literal"><span class="pre">$HOME</span></code> directory:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> touch ~/.bash_profile
+</pre></div>
+</div>
+<p>Open the new <code class="docutils literal"><span class="pre">.bash_profile</span></code> in edit mode using the <code class="docutils literal"><span class="pre">open</span> <span class="pre">-e</span></code> command:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> open -e ~/.bash_profile
+</pre></div>
+</div>
+<p>The code below will establish two things happen every time a new terminal window is
+initiated <a class="footnote-reference" href="#id3" id="id2">[1]</a>:</p>
+<ol class="arabic simple">
+<li>An architecture flag will be set to establish all compilation can assume 64 bit
+(OSX is 64-bit)</li>
+<li>Check to see if a <code class="docutils literal"><span class="pre">.bashrc</span></code> script exists, and if so, <code class="docutils literal"><span class="pre">source</span></code> it.</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Set architecture flags</span>
+<span class="nb">export</span> <span class="nv">ARCHFLAGS</span><span class="o">=</span><span class="s2">&quot;-arch x86_64&quot;</span>
+
+<span class="c1"># Load .bashrc if it exists</span>
+<span class="nb">test</span> -f ~/.bashrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.bashrc
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>In order to separate our development applications from OSX applications, I
+recommend adding <code class="docutils literal"><span class="pre">/usr/local/bin</span></code> to the <code class="docutils literal"><span class="pre">$PATH</span></code> in your <code class="docutils literal"><span class="pre">.bash_profile</span></code> as
+well.  You can ensure that your path is set correctly using the <code class="docutils literal"><span class="pre">echo</span></code> command
+from the terminal prompt:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">echo</span> <span class="nv">$PATH</span>
+<span class="go">/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</span>
+</pre></div>
+</div>
+<p>If your <code class="docutils literal"><span class="pre">echo</span></code> return doesn&#8217;t start with <code class="docutils literal"><span class="pre">/usr/local/bin:</span></code>, add the following
+lines to your <code class="docutils literal"><span class="pre">.bash_profile</span></code>:</p>
+<div class="last highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Ensure user defined binaries take precedence</span>
+<span class="c1"># export PATH=/usr/local/bin:$PATH</span>
+</pre></div>
+</div>
+</div>
+<p>Save the file (<code class="kbd docutils literal"><span class="pre">cmd+s</span></code>) and quit TextEdit (<code class="kbd docutils literal"><span class="pre">cmd+q</span></code>)</p>
+<p>We need to reinitiate the terminal window with our fancy new <code class="docutils literal"><span class="pre">.bash_profile</span></code>.
+The console command <code class="docutils literal"><span class="pre">source</span></code> takes care of that.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> ~/.bash_profile
+</pre></div>
+</div>
+<p>Did we actually change anything? Check by using the <code class="docutils literal"><span class="pre">echo</span></code> command to ask the
+console to return the value of <code class="docutils literal"><span class="pre">ARCHFLAGS</span></code>.</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">echo</span> <span class="nv">$ARCHFLAGS</span>
+<span class="go">-arch x86_64</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-a-bashrc-script">
+<h2>Create a .bashrc script<a class="headerlink" href="#create-a-bashrc-script" title="Permalink to this headline">¶</a></h2>
+<p>The bash_rc script is used to set global and environmental variables that we want
+every time a terminal window is launched. We&#8217;ll use it to safe guard against some
+basic problems.</p>
+</div>
+<div class="section" id="set-pip-to-only-execute-in-a-virtual-environment">
+<h2>Set pip to only execute in a virtual environment<a class="headerlink" href="#set-pip-to-only-execute-in-a-virtual-environment" title="Permalink to this headline">¶</a></h2>
+<p>Generally speaking, packages should be installed on an as-needed basis for each
+project. This will prevent unintended dependencies not contained in your virtual
+environment.</p>
+<p>Use the console command <code class="docutils literal"><span class="pre">touch</span></code> to create a bashrc script in your <code class="docutils literal"><span class="pre">$HOME</span></code> directory:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> touch ~/.bashrc
+</pre></div>
+</div>
+<p>Open the new <code class="docutils literal"><span class="pre">.bashrc</span></code> in edit mode using the <code class="docutils literal"><span class="pre">open</span> <span class="pre">-e</span></code> command:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> open -e ~/.bashrc
+</pre></div>
+</div>
+<p>Create an environment variable to ensure a virtual environment is active before pip can run.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># pip should only run if there is a virtualenv currently active</span>
+<span class="nb">export</span> <span class="nv">PIP_REQUIRE_VIRTUALENV</span><span class="o">=</span>TRUE
+</pre></div>
+</div>
+<p>Create two global variables for when global pip packages need to be installed.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># use gpip to temporarily turn off pip restrictions</span>
+gpip<span class="o">(){</span>
+   <span class="nv">PIP_REQUIRE_VIRTUALENV</span><span class="o">=</span><span class="s2">&quot;&quot;</span> pip <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+<span class="o">}</span>
+gpip3<span class="o">(){</span>
+   <span class="nv">PIP_REQUIRE_VIRTUALENV</span><span class="o">=</span><span class="s2">&quot;&quot;</span> pip3 <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td><a class="reference external" href="https://hackercodex.com/guide/mac-osx-mavericks-10.9-configuration/">https://hackercodex.com/guide/mac-osx-mavericks-10.9-configuration/</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="text_editor.html" class="btn btn-neutral float-right" title="Atom Text Editor" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="about.html" class="btn btn-neutral" title="About" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Eric Dusel.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
